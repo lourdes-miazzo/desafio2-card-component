@@ -4,27 +4,50 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh;   
     .card{
-        width: 80vw;
-        height: 80wh;
-        overflow: hidden;
-        border-radius: 1.5rem;
+        width: 85vw; 
+        border-radius: 0.6rem;
+        max-width: 316.7px;
+        @media (min-width: 992px){
+            width: 64vw; 
+            display: flex;
+            flex-direction: row;
+            max-width: 632.8px;
+           
+        }
         .imgDesktop{
-            @media (max-width: 992px){
+            @media (max-width: 991px){
                 display: none;
+            }
+            @media (min-width: 992px){
+                width: 32vw;
+                height: auto;
+                border-top-left-radius: 0.7rem;
+                border-bottom-left-radius: 0.7rem;
+                max-width:317.4px ;
             }
         }
         .imgMobile{
         width: 79,9vw;
-        border-top-left-radius: 1.5rem;
-        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem;
+        max-width: 316.7px;
+            @media (min-width: 992px){
+                display: none;
+            } 
         }
         .cardBody{
             background-color: $white;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @media (min-width: 992px){
+                width: 32vw;
+                border-top-right-radius: 0.6rem;
+                border-bottom-right-radius: 0.6rem;
+                max-width: 315.4px;
+            }
             h2{
                 font-family: $fontMonserr;
                 text-transform: uppercase;
@@ -32,12 +55,21 @@ body{
                 color: $grayBlue;
                 padding-top: 0.8rem;
                 padding-left: 1rem;
+                @media (min-width: 992px){
+                    padding-top: 1px;
+                    margin-left: 1rem;
+                } 
             }
             h1{
                 font-family: $fontFraun;
                 font-weight: $boldWeight;
                 padding: 0.3rem 1rem;
                 color: $darkBlue;
+                @media (min-width: 992px){
+                    margin: 1rem;
+                    margin-top: 0.4rem;
+                    font-size: 2.1rem;
+                } 
             }
             .txtParagraph{
                 font-family: $fontMonserr;
@@ -45,6 +77,11 @@ body{
                 font-size: 0.8rem;
                 padding-left: 1rem;
                 padding-right: 1rem;
+                @media (min-width: 992px){
+                    font-size: 0.9rem;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                } 
             }
             .txtAlign{
                 display: flex;
@@ -56,12 +93,19 @@ body{
                     font-size: 1.8rem;
                     margin-left: 1rem;
                     padding-right: 0.3rem;
+                    @media (min-width: 992px){
+                        margin-left: 2rem;
+                        margin-right: 1.3rem;
+                    } 
                 }
                 .txtPriceStrike{
                     font-family:  $fontMonserr;
                     text-decoration: line-through;
                     font-size: 0.7rem;
                     align-self: center;
+                    @media (min-width: 992px){
+                    
+                    } 
                 }
             }
             a{
@@ -76,13 +120,21 @@ body{
                 text-decoration: none;
                 text-align: center;
                 margin-bottom: 1rem;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
+                padding-top: 0.7rem;
+                padding-bottom: 0.7rem;
+                max-width: 251.2px;
+                @media (min-width: 992px){
+                    width: 25vw;
+                    margin-top: 1rem;
+                    padding-top: 0.8rem;
+                    padding-bottom: 0.8rem;
+                    max-width: 248px;
+                }
                 img{
-                    width: 0.6rem;
+                    width: 1.2rem;
                     margin-bottom: 0,7rem;
                     margin-right: 0.2rem;
-
+                    max-width: 19.2px;
                 }
             }
         }

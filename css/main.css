@@ -21,22 +21,44 @@ body {
   align-items: center;
   height: 100vh; }
   body .card {
-    width: 80vw;
-    height: 80wh;
-    overflow: hidden;
-    border-radius: 1.5rem; }
-    @media (max-width: 992px) {
+    width: 85vw;
+    border-radius: 0.6rem;
+    max-width: 316.7px; }
+    @media (min-width: 992px) {
+      body .card {
+        width: 64vw;
+        display: flex;
+        flex-direction: row;
+        max-width: 632.8px; } }
+    @media (max-width: 991px) {
       body .card .imgDesktop {
         display: none; } }
+    @media (min-width: 992px) {
+      body .card .imgDesktop {
+        width: 32vw;
+        height: auto;
+        border-top-left-radius: 0.7rem;
+        border-bottom-left-radius: 0.7rem;
+        max-width: 317.4px; } }
     body .card .imgMobile {
       width: 79,9vw;
-      border-top-left-radius: 1.5rem;
-      border-top-right-radius: 1.5rem; }
+      border-top-left-radius: 0.7rem;
+      border-top-right-radius: 0.7rem;
+      max-width: 316.7px; }
+      @media (min-width: 992px) {
+        body .card .imgMobile {
+          display: none; } }
     body .card .cardBody {
       background-color: white;
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      @media (min-width: 992px) {
+        body .card .cardBody {
+          width: 32vw;
+          border-top-right-radius: 0.6rem;
+          border-bottom-right-radius: 0.6rem;
+          max-width: 315.4px; } }
       body .card .cardBody h2 {
         font-family: Montserrat, sans-serif;
         text-transform: uppercase;
@@ -44,17 +66,31 @@ body {
         color: #6c7289;
         padding-top: 0.8rem;
         padding-left: 1rem; }
+        @media (min-width: 992px) {
+          body .card .cardBody h2 {
+            padding-top: 1px;
+            margin-left: 1rem; } }
       body .card .cardBody h1 {
         font-family: Fraunces, serif;
         font-weight: 700;
         padding: 0.3rem 1rem;
         color: #1c232b; }
+        @media (min-width: 992px) {
+          body .card .cardBody h1 {
+            margin: 1rem;
+            margin-top: 0.4rem;
+            font-size: 2.1rem; } }
       body .card .cardBody .txtParagraph {
         font-family: Montserrat, sans-serif;
         color: #6c7289;
         font-size: 0.8rem;
         padding-left: 1rem;
         padding-right: 1rem; }
+        @media (min-width: 992px) {
+          body .card .cardBody .txtParagraph {
+            font-size: 0.9rem;
+            margin-left: 1rem;
+            margin-right: 1rem; } }
       body .card .cardBody .txtAlign {
         display: flex;
         flex-direction: row; }
@@ -65,6 +101,10 @@ body {
           font-size: 1.8rem;
           margin-left: 1rem;
           padding-right: 0.3rem; }
+          @media (min-width: 992px) {
+            body .card .cardBody .txtAlign .txtPrice {
+              margin-left: 2rem;
+              margin-right: 1.3rem; } }
         body .card .cardBody .txtAlign .txtPriceStrike {
           font-family: Montserrat, sans-serif;
           text-decoration: line-through;
@@ -82,21 +122,23 @@ body {
         text-decoration: none;
         text-align: center;
         margin-bottom: 1rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem; }
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        max-width: 251.2px; }
+        @media (min-width: 992px) {
+          body .card .cardBody a {
+            width: 25vw;
+            margin-top: 1rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            max-width: 248px; } }
         body .card .cardBody a img {
-          width: 0.6rem;
+          width: 1.2rem;
           margin-bottom: 0,7rem;
-          margin-right: 0.2rem; }
+          margin-right: 0.2rem;
+          max-width: 19.2px; }
   body .attribution {
     text-align: center;
     font-size: 11px; }
     body .attribution a {
       color: #3e52a3; }
-
-body .card2 .imgDesktop {
-  width: 20vw; }
-
-@media (min-width: 992px) {
-  body .card2 .imgMobile {
-    display: none; } }
