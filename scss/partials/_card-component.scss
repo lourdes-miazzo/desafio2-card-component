@@ -1,0 +1,97 @@
+body{
+    background-color: $creamWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .card{
+        width: 80vw;
+        height: 80wh;
+        overflow: hidden;
+        border-radius: 1.5rem;
+        .imgDesktop{
+            @media (max-width: 992px){
+                display: none;
+            }
+        }
+        .imgMobile{
+        width: 79,9vw;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        }
+        .cardBody{
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-family: $fontMonserr;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                color: $grayBlue;
+                padding-top: 0.8rem;
+                padding-left: 1rem;
+            }
+            h1{
+                font-family: $fontFraun;
+                font-weight: $boldWeight;
+                padding: 0.3rem 1rem;
+                color: $darkBlue;
+            }
+            .txtParagraph{
+                font-family: $fontMonserr;
+                color: $grayBlue;
+                font-size: 0.8rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .txtAlign{
+                display: flex;
+                flex-direction: row;
+                .txtPrice{
+                    font-family: $fontFraun;
+                    font-weight: $boldWeight;
+                    color: $darkCyan;
+                    font-size: 1.8rem;
+                    margin-left: 1rem;
+                    padding-right: 0.3rem;
+                }
+                .txtPriceStrike{
+                    font-family:  $fontMonserr;
+                    text-decoration: line-through;
+                    font-size: 0.7rem;
+                    align-self: center;
+                }
+            }
+            a{
+                font-family: $fontMonserr;
+                font-weight: $boldWeight;
+                font-size: 0.7rem;
+                color: $white;
+                background-color: $darkCyan;
+                border-radius: 0.4rem;
+                width: 67vw;
+                align-self: center;
+                text-decoration: none;
+                text-align: center;
+                margin-bottom: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                img{
+                    width: 0.6rem;
+                    margin-bottom: 0,7rem;
+                    margin-right: 0.2rem;
+
+                }
+            }
+        }
+    }
+    .attribution{
+        text-align: center;
+        font-size: $fontAtt;
+        a{
+            color: $lightBlue;
+        }
+    }
+}

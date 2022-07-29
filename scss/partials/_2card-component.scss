@@ -1,0 +1,32 @@
+body{
+    .card2{
+        .imgDesktop{
+            width: 20vw;
+        }
+        .imgMobile{
+            @media (min-width: 992px){
+                display: none;
+            }
+        } 
+        .cardBody2{
+            h2{
+
+            }
+            h1{
+
+            }
+            .txtParagraph2{
+
+            }
+            .txtPrice2{
+
+            }
+            .txtPriceStrike2{
+
+            }
+            button{
+
+            }
+        }
+    }
+}
